@@ -14,7 +14,9 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: './list/list.module#ListPageModule'
-  }
+  },
+  { path: 'create-contact', loadChildren: './create-contact/create-contact.module#CreateContactPageModule' },
+  { path: 'view-contact', loadChildren: './view-contact/view-contact.module#ViewContactPageModule' }
 ];
 
 @NgModule({
